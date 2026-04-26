@@ -12,7 +12,7 @@ namespace CalorieTracker_MobileDeviceProgramming.Models
         public int Id { get; set; }
         [Required] public string MealName { get; set; }
         [Required] public string MealDescription { get; set; }
-        public int Calories { get; set; }
-        public DateTime Date { get; set; }
+        public int MealCalories { get; set; }
+        public DateTime MealDate { get; set; }
     }
 }

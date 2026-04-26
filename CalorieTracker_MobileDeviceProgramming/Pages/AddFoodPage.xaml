@@ -5,15 +5,20 @@
              Title="AddFoodPage">
     <VerticalStackLayout Spacing="15" Padding="20">
         <Label Text="Date:" FontAttributes="Bold" />
+        <DatePicker x:Name="MealDate"></DatePicker>
 
         <Label Text="Meal:" FontAttributes="Bold" />
         <Entry x:Name="MealName" Placeholder="Enter Meal Name" />
+
+        <Label Text="Calories:" FontAttributes="Bold" />
+        <Entry x:Name="MealCalories" Placeholder="Enter Meal Calories" />
 
         <Label Text="Description:" FontAttributes="Bold" />
         <Editor x:Name="ContentEditor" 
             Placeholder="Write about ingredients, nutrition facts, etc..."
             HeightRequest="200" />
 
-        <Button Text="Save Entry"/>
+        <Button Text="Save Entry"
+                Clicked="OnSaveClicked"/>
     </VerticalStackLayout>
 </ContentPage>
